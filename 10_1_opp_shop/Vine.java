@@ -20,7 +20,7 @@ public class Vine extends Alcohol implements ShopItem {
         if (this.getAlcoholVolume() < 8.5) {
             exciseTax = this.getPackageSize() * 0.28;
         } else {
-            exciseTax = this.getPackageSize() * 0.72;
+            exciseTax = this.getPackageSize() * 0.12;
         }
 
         return pvmTax + exciseTax;
