@@ -29,7 +29,7 @@ public class Alcohol extends RegularItem implements ShopItem {
     public double taxCount() {
         double pvmTax = this.getPriceBeforeTax() * 21 / 100.0;
         double exciseTax;
-        if (this.getAlcoholVolume() < 15) {
+        if (this.getAlcoholVolume() < 20) {
             exciseTax = this.getPackageSize() * 0.86;
         } else {
             exciseTax = this.getPackageSize() * 1.26;
